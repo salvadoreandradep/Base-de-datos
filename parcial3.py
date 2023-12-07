@@ -22,7 +22,7 @@ def scrape_and_save(url, class_name1, class_name2, output_file):
     with open(output_file, "w", newline='', encoding='utf-8') as csvfile:
         writer = csv.writer(csvfile)
         # Escribir los encabezados
-        writer.writerow(['Producto', 'Modelo',])
+        writer.writerow(['Producto', 'Modelo', ' Precio'])
         # Escribir los datos en columnas separadas
         writer.writerows(zip(data_list_pos1, data_list_pos2))
 
@@ -34,7 +34,7 @@ class_name1 = 'font-gothic'
 class_name2 = 'text-main font-bold text-lg md:text-xl'
 
 # Nombre del archivo de salida CSV
-output_file = 'datos.csv'
+output_file = 'parcial.csv'
 
 
 
