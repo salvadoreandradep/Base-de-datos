@@ -37,6 +37,9 @@ class_name2 = 'text-main font-bold text-lg md:text-xl'
 output_file = 'datos.csv'
 
 
+
+
+
 # Llamar a la función para realizar el scraping y guardar en el archivo CSV
 scrape_and_save(url, class_name1, class_name2, output_file)
 
